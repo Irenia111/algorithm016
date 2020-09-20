@@ -283,7 +283,7 @@ var postorderTraversal = function(root) {
 
 非递归方式，采用”队列“，**实现更快查询某元素，常用于“最短路径”**
 
-深度优： 
+深度优先： 
 
 采用二元组 (node, level) 表示状态，它代表某个节点和它所在的层数，每个新进队列的节点的 level 值都是父亲节点的 level 值加一。最后根据每个点的 level 对点进行分类，分类的时候我们可以利用哈希表，维护一个以 level 为键，对应节点值组成的数组为值，广度优先搜索结束以后按键 level 从小到大取出所有值，组成答案返回即可。
 
@@ -587,10 +587,6 @@ top K 问题 中位数 堆排序
 图  堆(实现堆)
 
 #### 未完成 & 待优化
-丑数： https://leetcode-cn.com/problems/chou-shu-lcof/ 
-
-      https://leetcode-cn.com/problems/ugly-number-ii/
-
-
+丑数： https://leetcode-cn.com/problems/chou-shu-lcof/  https://leetcode-cn.com/problems/ugly-number-ii/
 
 连通图个数： https://leetcode-cn.com/problems/number-of-islands/ 
